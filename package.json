@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "homepage": "https://github.com/krish-patel-simform/netmimic",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --watch"
+    "build": "tsc",
+    "dev": "tsc --watch"
   },
   "exports": {
     ".": {
@@ -16,8 +17,22 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "keywords": [],
-  "author": "",
+  "files": [
+  "dist"
+],
+"keywords": [
+    "network",
+    "retry",
+    "backoff",
+    "simulation",
+    "api",
+    "testing",
+    "frontend",
+    "typescript",
+    "developer-tools",
+    "mock-network"
+  ],
+  "author": "Krish Patel",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^25.6.2",
