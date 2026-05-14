@@ -1,4 +1,4 @@
 // sleep
 // random number
 
-export {fetchWithRetry} from './retry/index.ts'
+export {fetchWithRetry,Error} from './retry/index.ts'

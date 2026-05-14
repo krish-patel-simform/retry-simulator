@@ -1,14 +1,14 @@
 {
   "name": "retry-simulator",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.2",
+  "description": "A lightweight TypeScript utility for retrying async functions with configurable backoff strategies like fixed, linear,and exponential retries.",
   "main": "index.js",
   "type": "module",
-  "homepage": "https://github.com/krish-patel-simform/netmimic",
+  "homepage": "https://github.com/krish-patel-simform/retry-simulator#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "dev": "tsc --watch"
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --watch"
   },
   "exports": {
     ".": {
@@ -18,9 +18,9 @@
     }
   },
   "files": [
-  "dist"
-],
-"keywords": [
+    "dist"
+  ],
+  "keywords": [
     "network",
     "retry",
     "backoff",
@@ -36,6 +36,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^25.6.2",
+    "tsup": "^8.5.1",
     "typescript": "^6.0.3"
   }
 }
